@@ -1,0 +1,183 @@
+/*============ Geral ==============*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #edeff3;
+    display: flow-root;
+    justify-content: center;  
+}
+
+
+/* ============= Header ===================*/
+
+.logo{
+    margin-left: 50px;
+    width: 50px;
+    position: relative;
+    top: 19px;
+}
+
+.header{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    margin-top: 17px;    
+    border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+}
+
+.menu {
+    width: 70%;
+    margin-right: 50px;
+    padding-bottom: 30px;
+}
+
+.header a{
+    font-size: 16px;
+    font-style: bold;
+    color: #555758;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.header a:hover{
+    color: #00aaff;
+}
+
+.contact{
+    width: 20%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.profile{
+    width: 30px;
+}
+
+.fa-chevron-down {
+    color: #a2a8b2;
+    font-size: 15px;
+    position: relative;
+    right: 60px;
+    top: 2px;
+}
+
+.container{
+    width: 500px;
+    height: 60vh;
+    display: block;
+    margin: 60px auto;
+    background: rgb(255 255 255);
+    border-radius: 20px; 
+}
+
+
+h2 {
+    border-bottom: 1px solid;
+    font: 14px;
+    text-align: center;
+    margin: 12px;
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+
+span {
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+.form {
+    margin: 17px 12px;
+}
+
+
+form i {
+    font-size: 1.5em;
+    position: relative;
+    right: 10px;
+    bottom: 4px;
+    float: right;   
+}
+
+fieldset {
+    padding: 4px 3px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    height: 70px;
+    display: flex;
+    margin-right: 6px;
+    justify-items: center;
+    border-radius: 13px;
+    border-color: 1px #e3e4e8;    
+}
+
+fieldset:hover{
+    border: 1px solid #1074f1;
+    
+}
+
+input {
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    width: 100%;
+    justify-items: center;
+    font-size: large;
+    text-indent: 6px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="checkbox"]{
+    width: 5%;    
+}
+
+.transacao {
+    justify-content: center;
+}
+
+
+label {
+    font-weight: 700;
+}
+
+legend {
+    padding: 7px;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1074f1;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
