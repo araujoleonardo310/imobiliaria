@@ -34,37 +34,37 @@
             <form>
                 <fieldset class="fildset">
                     <legend class="legend">Nome </legend>
-                    <input type="text" name="nome" id="nome" placeholder="Nome" autocomplete="off" value="">
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
                     <i class="fas fa-user"></i>
                 </fieldset>
 
                
                 <fieldset>
                     <legend>Data</legend>
-                    <input type="data" name="data" id="data" placeholder="dd / mm / aaaa" autocomplete="off" value="">
+                    <input type="data" name="data" id="data" placeholder="dd / mm / aaaa">
                     <i class="far fa-calendar-alt"></i>
                 </fieldset>
 
                 <fieldset>
                     <legend>R$ VALOR</legend>
-                    <input type="number" name="valor" id="valor" placeholder="R$ 0,00" autocomplete="off" value="">
+                    <input type="number" name="valor" id="valor" placeholder="R$ 0,00">
                     <i class="fas fa-wallet"></i>
                 </fieldset>
                       
 
                 <span>Status</span>
-                <select id="transacao">
+                <select id="status">
                     <option value="pagamento">Pagamento</option>
                     <option value="arrendado">Arrendado</option>
                 </select>               
 
-                <button type="submit" onclick="cadastrar()">Enviar</button>
+                <button type="submit" onclick="pegarDados()">Enviar</button>
             </form>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../scripts/form.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../scripts/script.js"></script>
 
 </body>
 </html>
