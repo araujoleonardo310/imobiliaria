@@ -1,5 +1,8 @@
 {
     "aluguel": [
-      { "id": 1, "nome": "Leonardo Araujo", "data": "13/08/2000", "status": "arredado" }
+      { "id": 1, 
+        "nome": "Leonardo Araujo", 
+        "data": "13/08/2000", 
+        "status": "arredado" }
     ]
   }

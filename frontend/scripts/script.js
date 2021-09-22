@@ -1,4 +1,4 @@
-var axios = "http://localhost:3000";
+var axios = require('axios');
 
 
 function pegarDados (){
