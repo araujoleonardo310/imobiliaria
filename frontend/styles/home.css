@@ -37,13 +37,12 @@ body{
     top: 19px;
 }
 
-.header{
+.header {
     width: 100%;
     background-color: #fff;
     display: flex;
     align-items: center;
-    height: 90px;
-    margin-top: 17px;    
+    height: 80px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.274);
 }
 
@@ -53,13 +52,13 @@ body{
     padding-bottom: 30px;
 }
 
-.header a{
-    font-size: 16px;
-    font-style: bold;
-    color: #555758;
+
+
+a {
     text-decoration: none;
-    justify-content: space-between;
-    margin-left: 10px;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
 }
 
 .header a:hover{
@@ -96,17 +95,14 @@ body{
 .table1 {
     padding-top: 10px;
 }
-.title {
-    display: flex;
-    margin: 20px 42px;
-    justify-content: space-between;
-}
 
-.title h2{
-    color: #586672;
-    font-size: 16px;
-    font-style: bold;
-    margin-top: 15px;
+
+.title{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+
 }
 
 button{
@@ -137,52 +133,21 @@ table img {
     width: 20px;
 }
 
-table th {
-    background-color: rgb(249 251 252);
+
+th {
+    background-color: rgba(1, 129, 248, 0.541);
+    border-radius: 5px;
     text-transform: uppercase;
     font-size: small;
-    font-style: bold;
-    padding: 12px;
-    width: 20%;
+    padding: 15px;
     text-align: left;
     color: #555758;
+    margin-left: 1rem;
 }
 
-tr td{
+td{
     border-bottom: 1px solid rgba(128, 128, 128, 0.226);
-    padding: 30px 8px;
+    padding: 10px;
 }
 
 
-td {
-    width: 50%;
-    text-align: left;
-    white-space: nowrap;
-}
-
-.bold, .name {
-    color: #000;
-    font-weight: 600;
-}
-
-.subtitle{
-    display: block;
-    margin-top: 11px;
-}
-
-.avatar{
-    display: inline-flex;
-    width: 2em;
-    border-radius: 100px;
-}
-
-
-.status, .usuario{
-    margin-left: 80px;
-    
-}
-
-.seta-direita{
-    color: rgba(0, 0, 0, 0.623);
-    margin-left: 100px;
-}

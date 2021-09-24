@@ -19,7 +19,7 @@
         </div>
 
         <div class="contact"><!-- Lado esquerdo contato -->
-            <a href="../pages/form.html" target="_blank"><i class="fas fa-plus"></i></a>
+            <a href="../pages/form.html"><i class="fas fa-plus"></i></a>
             <span><i class="far fa-envelope"></i></span>
             <img src="../assets/man2.png" alt="Photo profile" class="profile">  
             <span><i class="fas fa-chevron-down"></i></span>              
@@ -28,10 +28,10 @@
     
     <div class="container"><!-- Container -->
 
-        <h2>REGISTRO</h2>       
+        <h2><i class="fas fa-database"></i> Registros</h2>       
 
         <div class="form">
-            <form>
+            <form autocomplete="off"> 
                 <fieldset class="fildset">
                     <legend class="legend">Nome </legend>
                     <input type="text" name="nome" id="nome" placeholder="Nome">
@@ -46,7 +46,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>R$ VALOR</legend>
+                    <legend>R$ Valor</legend>
                     <input type="number" name="valor" id="valor" placeholder="R$ 0,00">
                     <i class="fas fa-wallet"></i>
                 </fieldset>
@@ -54,11 +54,11 @@
 
                 <span>Status</span>
                 <select id="status">
-                    <option value="pagamento">Pagamento</option>
-                    <option value="arrendado">Arrendado</option>
+                    <option value="Alugado">Alugado</option>
+                    <option value="Desocupado">Desocupado</option>
                 </select>               
 
-                <button type="submit" onclick="pegarDados()">Enviar</button>
+                <button type="submit" onclick="enviar()">Enviar</button>
             </form>
         </div>
     </div>

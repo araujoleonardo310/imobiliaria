@@ -1,18 +1,91 @@
-var axios = require('axios');
+var api = "http://localhost:3000"
+
+const list = async () => {
+  var aluguel = await axios.get(`${api}/aluguel`);
+
+  aluguel.data.map((item) => { 
+    var table = document.getElementById('table');
+    var tr = document.createElement("tr");
+    var td1 = document.createElement("td");
+    var td2 = document.createElement("td");
+    var td3 = document.createElement("td");
+    var td3 = document.createElement("td");
+    var td4 = document.createElement("td");
+    var td4 = document.createElement("td");
+    var nome = document.createTextNode(`${item.nome}`);
+    var data = document.createTextNode(`${item.data}`);
+    var valor = document.createTextNode(`${item.valor}`);
+    var status = document.createTextNode(`${item.status}`);
+
+    table.appendChild(tr);
+    tr.appendChild(td1);
+    td1.appendChild(nome);
 
 
+    tr.appendChild(td2);    
+    td2.appendChild(data);
+
+    
+    tr.appendChild(td3);    
+    td3.appendChild(valor);
+
+    
+    tr.appendChild(td4);    
+    td4.appendChild(status);
+   
+  });
+};
+
+list();
+
+
+const Create = async () => {
+  const inputName = document.getElementById("nome");
+    const valueNome = inputName.value;
+
+    const inputData = document.getElementById("data");
+    const valueData = inputData.value;
+
+    const inputValor = document.getElementById("valor");
+    const valueValor = inputValor.value;
+
+    const selectStatus = document.getElementById("status");
+    const valueStatus = selectStatus.value;
+
+    var dados = {
+        nome: valueNome, 
+        data: valueData, 
+        valor: valueValor,
+        status: valueStatus 
+    };
+
+    await axios.post(`${api}/aluguel`, dados);
+};
+
+function enviar() {
+  return Create();
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function pegarDados (){
-    const inputName = document.querySelector("#nome");
-    const nome = inputName.value
-
-    const inputData = document.querySelector("#data");
-    const data = inputData.value
-
-    const inputValor = document.querySelector("#valor");
-    const valor = inputValor.value
-
-    const selectStatus = document.querySelector("#status");
-    const status = selectStatus.value
+    
 
     module.exports = () => {
         const data = { aluguel: [] }
@@ -23,6 +96,8 @@ function pegarDados (){
         return data
       }
 }
+
+*/
 
 
 
