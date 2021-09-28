@@ -12,15 +12,17 @@ const list = async () => {
     var td3 = document.createElement("td");
     var td4 = document.createElement("td");
     var td4 = document.createElement("td");
+    var td5 = document.createElement('td');
+  
     var nome = document.createTextNode(`${item.nome}`);
     var data = document.createTextNode(`${item.data}`);
     var valor = document.createTextNode(`${item.valor}`);
     var status = document.createTextNode(`${item.status}`);
 
+    
     table.appendChild(tr);
     tr.appendChild(td1);
     td1.appendChild(nome);
-
 
     tr.appendChild(td2);    
     td2.appendChild(data);
@@ -32,7 +34,14 @@ const list = async () => {
     
     tr.appendChild(td4);    
     td4.appendChild(status);
-   
+
+    tr.appendChild(td5);    
+    td5.innerHTML = `
+      <a href="/frontend/pages/editar.html"><button id="editar"><i class="fas fa-edit"></i><button></a>
+      <button id="excluir"><i class="far fa-trash-alt"></i></button>
+    
+    `
+  
   });
 };
 
@@ -67,37 +76,27 @@ function enviar() {
 };
 
 
+function deletar(id) {
+  axios.delete(`${api}/aluguel/${id}`)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-function pegarDados (){
-    
-
-    module.exports = () => {
-        const data = { aluguel: [] }
-        // Create 1000 users
-        for (let i = 0; i < 1000; i++) {
-          data.aluguel.push({ id: i, nome: `aluguel${nome}` })
-        }
-        return data
-      }
 }
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

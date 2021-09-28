@@ -106,18 +106,11 @@ a {
 }
 
 button{
-    background-color: #2dcb73;
+    background: none;
     padding: 10px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: 800;
     border: none;
-    border-radius: 3px;
-}
-
-button:hover{
-    cursor: pointer;
-    background-color: #000;
-    color: #00aaff;  
 }
 
 table{
@@ -135,19 +128,22 @@ table img {
 
 
 th {
-    background-color: rgba(1, 129, 248, 0.541);
+    background-color: rgba(8, 124, 233, 0.541);
     border-radius: 5px;
     text-transform: uppercase;
     font-size: small;
     padding: 15px;
-    text-align: left;
-    color: #555758;
+    text-align: center;
+    color: #0c160b;
     margin-left: 1rem;
 }
 
 td{
     border-bottom: 1px solid rgba(128, 128, 128, 0.226);
     padding: 10px;
+    text-align: center;
 }
+
+
 
 
