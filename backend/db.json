@@ -1,32 +1,18 @@
 {
   "aluguel": [
     {
-      "id": 1,
-      "nome": "Leonardo Araujo",
-      "data": "13/08/2000",
-      "valor": "1500.00",
-      "status": "arredado"
-    },
-    {
-      "nome": "Carlos Fernandes",
-      "data": "11/08/2009",
-      "valor": "300.00",
-      "status": "Alugado",
+      "nome": "Leonardo",
+      "data": "13/08/1994",
+      "valor": "100.00",
+      "status": "Desocupado",
       "id": 2
     },
     {
-      "nome": "José Ferreira",
-      "data": "07/09/2001",
-      "valor": "400.00",
-      "status": "Desocupado",
+      "nome": "jjjjjjjjjjjjjjjjjj",
+      "data": "13/05/2021",
+      "valor": "11111",
+      "status": "Alugado",
       "id": 3
-    },
-    {
-      "nome": "Patrícia Sousa",
-      "data": "06/04/2020",
-      "valor": "250.00",
-      "status": "Desocupado",
-      "id": 4
     }
   ]
 }
