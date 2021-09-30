@@ -106,9 +106,8 @@ a {
 }
 
 button{
-    padding: 1em;
+    padding: 0.2em;
     background: none;
-    padding: 10px;
     color: rgb(0, 0, 0);
     font-weight: 800;
     border: none;
