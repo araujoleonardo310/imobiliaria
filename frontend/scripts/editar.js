@@ -1,6 +1,10 @@
 var api = "http://localhost:3000"
 
+var idPost
+
 const Editar = async(id) => {
+ 
+   idPost = await axios.delete(`${api}/aluguel/${id}`); 
   window.location.href = '/frontend/pages/editar.html'
 };
 
@@ -24,7 +28,7 @@ const Create = async () => {
         status: valueStatus 
     };
 
-    await axios.post(`${api}/aluguel/`, dados);
+    await axios.put(`${api}/aluguel/2`, dados);
 };
 
 function atualizaDados() {

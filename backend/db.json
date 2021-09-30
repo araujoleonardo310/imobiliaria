@@ -1,10 +1,10 @@
 {
   "aluguel": [
     {
-      "nome": "Leonardo",
-      "data": "13/08/2016",
-      "valor": "6666.000",
-      "status": "Alugado",
+      "nome": "",
+      "data": "",
+      "valor": "",
+      "status": "Desocupado",
       "id": 1
     },
     {
