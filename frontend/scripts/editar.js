@@ -1,6 +1,6 @@
 var api = "http://localhost:3000"
 
-var idPost
+
 
 const Editar = async(id) => {
  
@@ -9,7 +9,7 @@ const Editar = async(id) => {
 };
 
 const Create = async () => {
-  const inputName = document.getElementById("nome");
+    const inputName = document.getElementById("nome");
     const valueNome = inputName.value;
 
     const inputData = document.getElementById("data");
