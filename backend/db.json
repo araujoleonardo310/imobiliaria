@@ -1,28 +1,11 @@
 {
   "aluguel": [
     {
-      "id": 1,
-      "nome": "json-server",
-      "data": "13/08/2000",
-      "valor": "1000.00",
-      "status": "pago"
-    },
-    {
       "nome": "Leonardo",
       "data": "13/08/2016",
       "valor": "6666.000",
       "status": "Alugado",
-      "id": 2
+      "id": 1
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
