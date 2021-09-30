@@ -1,9 +1,7 @@
 var api = "http://localhost:3000"
 
 const Editar = async(id) => {
-  const dadosEdicao = await axios.patch(`${api}/aluguel/${id}`);
   window.location.href = '/frontend/pages/editar.html'
-  
 };
 
 const Create = async () => {
@@ -26,8 +24,7 @@ const Create = async () => {
         status: valueStatus 
     };
 
-    await axios.post(`${api}/aluguel`, dados);
-    console.log(dados)
+    await axios.post(`${api}/aluguel/`, dados);
 };
 
 function atualizaDados() {
