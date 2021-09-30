@@ -170,7 +170,11 @@ legend {
     background: #7d878452;
     font-weight: 700;
     text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
+
+
 
 button {
     width: 100%;
