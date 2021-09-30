@@ -1,18 +1,28 @@
 {
   "aluguel": [
     {
-      "nome": "Leonardo",
-      "data": "13/08/1994",
-      "valor": "100.00",
-      "status": "Desocupado",
-      "id": 2
+      "id": 1,
+      "nome": "json-server",
+      "data": "13/08/2000",
+      "valor": "1000.00",
+      "status": "pago"
     },
     {
-      "nome": "jjjjjjjjjjjjjjjjjj",
-      "data": "13/05/2021",
-      "valor": "11111",
+      "nome": "Leonardo",
+      "data": "13/08/2016",
+      "valor": "6666.000",
       "status": "Alugado",
-      "id": 3
+      "id": 2
     }
-  ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

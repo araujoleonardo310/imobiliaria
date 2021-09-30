@@ -119,6 +119,7 @@ table{
     margin-left: 50px;
     border-collapse: collapse;
     color: rgb(140 149 163);
+    border-spacing: 30px;
 }
 
 
@@ -128,21 +129,38 @@ table img {
 
 
 th {
-    background-color: rgba(8, 124, 233, 0.541);
-    border-radius: 5px;
+    background-color: rgb(68 233 8 / 53%);
     text-transform: uppercase;
-    font-size: small;
-    padding: 15px;
+    font-size: 1em;
+    padding: 8px;
     text-align: center;
-    color: #0c160b;
-    margin-left: 1rem;
+    color: #000000;
 }
 
 td{
+    color: #00476a;
     border-bottom: 1px solid rgba(128, 128, 128, 0.226);
     padding: 10px;
     text-align: center;
 }
+
+.fa-edit, .fa-trash-alt {
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 1.2em;
+    background-color: none;
+
+}
+
+.fa-edit {
+    color: #00aaff;
+}
+
+.fa-trash-alt {
+    color: rgb(240, 9, 9);
+}
+
+
 
 
 

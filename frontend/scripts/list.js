@@ -6,7 +6,7 @@ const list = async () => {
   aluguel.data.map((item) => { 
     var table = document.getElementById('table');
     var tr = document.createElement("tr");
-    var td0 = document.createElement('td')
+    var td0 = document.createElement("td");
     var td1 = document.createElement("td");
     var td2 = document.createElement("td");
     var td3 = document.createElement("td");
@@ -20,15 +20,10 @@ const list = async () => {
     var data = document.createTextNode(`${item.data}`);
     var valor = document.createTextNode(`${item.valor}`);
     var status = document.createTextNode(`${item.status}`);
-
-    var inputId = document.createElement('input');
-
-    
+  
     table.appendChild(tr);
     tr.appendChild(td0);
-    td0.appendChild(inputId);
-    inputId.value = `${item.id}`
-
+    td0.appendChild(id);
 
     table.appendChild(tr);
     tr.appendChild(td1);
@@ -54,45 +49,6 @@ const list = async () => {
 };
 
 list();
-
-
-const Create = async () => {
-  const inputName = document.getElementById("nome");
-    const valueNome = inputName.value;
-
-    const inputData = document.getElementById("data");
-    const valueData = inputData.value;
-
-    const inputValor = document.getElementById("valor");
-    const valueValor = inputValor.value;
-
-    const selectStatus = document.getElementById("status");
-    const valueStatus = selectStatus.value;
-
-    var dados = {
-        nome: valueNome, 
-        data: valueData, 
-        valor: valueValor,
-        status: valueStatus 
-    };
-
-    await axios.post(`${api}/aluguel`, dados);
-};
-
-function enviar() {
-  return Create();
-};
-
-const Delete = async(id) => {
-  await axios.delete(`${api}/aluguel/${id}`);
-}
-
-const Editar = async(id) => {
-  const aluguel = await axios.get(`${api}/aluguel/${id}`);
-  window.location.href = '/frontend/pages/form.html'
-  console.log(aluguel) 
-  
-}
 
 
 
