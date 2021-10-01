@@ -17,11 +17,12 @@ form.addEventListener('submit', e => {
     const valueStatus = selectStatus.value;
 
     var dados = {
-        nome: valueNome, 
-        data: valueData, 
+        nome: valueNome,
+        data: valueData,
         valor: valueValor,
-        status: valueStatus 
+        status: valueStatus
     };
 
     await axios.post(`${api}/aluguel`, dados);
 })
+

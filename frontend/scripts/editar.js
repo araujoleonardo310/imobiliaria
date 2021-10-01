@@ -3,26 +3,26 @@ var api = "http://localhost:3000";
 var id = localStorage.getItem("ID");
 
 const Create = async () => {
-    const inputName = document.getElementById("nome");
-    const valueNome = inputName.value;
+  const inputName = document.getElementById("nome");
+  const valueNome = inputName.value;
 
-    const inputData = document.getElementById("data");
-    const valueData = inputData.value;
+  const inputData = document.getElementById("data");
+  const valueData = inputData.value;
 
-    const inputValor = document.getElementById("valor");
-    const valueValor = inputValor.value;
+  const inputValor = document.getElementById("valor");
+  const valueValor = inputValor.value;
 
-    const selectStatus = document.getElementById("status");
-    const valueStatus = selectStatus.value;
+  const selectStatus = document.getElementById("status");
+  const valueStatus = selectStatus.value;
 
-    var dados = {
-        nome: valueNome, 
-        data: valueData, 
-        valor: valueValor,
-        status: valueStatus 
-    };
+  var dados = {
+    nome: valueNome,
+    data: valueData,
+    valor: valueValor,
+    status: valueStatus
+  };
 
-    await axios.put(`${api}/aluguel/${id}`, dados);
+  await axios.put(`${api}/aluguel/${id}`, dados);
 };
 
 const List = async () => {
@@ -34,17 +34,17 @@ const List = async () => {
   document.getElementById("valor").value = filter[0].valor;
   document.getElementById("status").value = filter[0].status
 
-  document.getElementById("nome").onchange = function () {}  
-  document.getElementById("data").onchange = function () {}  
-  document.getElementById("valor").onchange = function () {}  
-  document.getElementById("status").onchange = function () {}  
+  document.getElementById("nome").onchange = function () { }
+  document.getElementById("data").onchange = function () { }
+  document.getElementById("valor").onchange = function () { }
+  document.getElementById("status").onchange = function () { }
 }
 
 List();
 
 
 
-  
+
 
 
 
