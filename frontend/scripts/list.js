@@ -50,7 +50,10 @@ const list = async () => {
 
 list();
 
-
+const Editar = (id) => {
+  localStorage.setItem("ID", id);
+  window.location.href = `/frontend/pages/edicao.html`;
+}
 
 
 

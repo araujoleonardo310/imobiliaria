@@ -1,12 +1,6 @@
-var api = "http://localhost:3000"
+var api = "http://localhost:3000";
 
-
-
-const Editar = async(id) => {
- 
-   idPost = await axios.delete(`${api}/aluguel/${id}`); 
-  window.location.href = '/frontend/pages/editar.html'
-};
+var id = localStorage.getItem("ID");
 
 const Create = async () => {
     const inputName = document.getElementById("nome");
@@ -28,22 +22,29 @@ const Create = async () => {
         status: valueStatus 
     };
 
-    await axios.put(`${api}/aluguel/2`, dados);
+    await axios.put(`${api}/aluguel/${id}`, dados);
 };
 
-function atualizaDados() {
-  return Create();
+const List = async () => {
+  var request = await axios.get(`${api}/aluguel`)
+  var filter = request.data.filter((item) => item.id == id);
+
+  document.getElementById("nome").value = filter[0].nome;
+  document.getElementById("data").value = filter[0].data;
+  document.getElementById("valor").value = filter[0].valor;
+  document.getElementById("status").value = filter[0].status
+
+  document.getElementById("nome").onchange = function () {}  
+  document.getElementById("data").onchange = function () {}  
+  document.getElementById("valor").onchange = function () {}  
+  document.getElementById("status").onchange = function () {}  
 }
 
+List();
 
 
 
   
-  
-
-
-
-
 
 
 

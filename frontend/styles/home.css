@@ -1,5 +1,6 @@
 /*============ Geral ==============*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/*============ Geral ==============*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -9,26 +10,15 @@
 
 body{
     width: 100%;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: #edeff3;
-    display: block;
-    justify-content: center;
-    overflow-y: scroll
-   
+    display: flow-root;
+    justify-content: center;  
 }
 
-/*============ Container =============*/
-.container{
-    width: 1000px;
-    height: 100vh;
-    display: block;
-    margin: 30px auto;
-    background: rgb(255 255 255);
-    border-radius: 20px; 
-}
 
 /* ============= Header ===================*/
+
 
 .logo{
     margin-left: 50px;
@@ -44,6 +34,7 @@ body{
     align-items: center;
     height: 80px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+    font-size: 1.1em;
 }
 
 .menu {
@@ -51,18 +42,15 @@ body{
     margin-right: 50px;
     padding-bottom: 30px;
 }
-
-
-
 a {
     text-decoration: none;
     color: #000;
-    font-family: Roboto, Arial, sans-serif;
     font-weight: 700;
+    font-size: 1.2em;
 }
 
-.header a:hover{
-    color: #00aaff;
+a:hover{
+    border-bottom: 2px solid;
 }
 
 .contact{
@@ -73,22 +61,22 @@ a {
 }
 
 .profile{
-    width: 30px;
+    width: 40px;
 }
 
 .fa-chevron-down {
     color: #a2a8b2;
-    font-size: 15px;
+    font-size: 1.1em;
     position: relative;
-    right: 60px;
-    top: 2px;
+    right: 55px;
+    top: 5px;
 }
 
-.fa-angle-right{
- position: relative;
- right: 40px;
+span {
+    color: #000;
+    font-weight: 700;
+    margin-right: 2px;
 }
-
 
 /*====================== Tabela =================*/
 
@@ -101,7 +89,7 @@ a {
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 button{
@@ -128,12 +116,12 @@ table img {
 
 
 th {
-    background-color: rgb(68 233 8 / 53%);
+    background-color: #11648c;
+    color: #fff;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 8px;
     text-align: center;
-    color: #000000;
 }
 
 td{
@@ -141,7 +129,7 @@ td{
     border-bottom: 1px solid rgba(128, 128, 128, 0.226);
     padding: 10px;
     text-align: center;
-    font-size: 1.2em;
+    font-weight: 800;
 }
 
 .fa-edit, .fa-trash-alt {
@@ -153,7 +141,7 @@ td{
 }
 
 .fa-edit {
-    color: #00aaff;
+    color: #083247;
 }
 
 .fa-trash-alt {

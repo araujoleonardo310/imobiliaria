@@ -1,7 +1,10 @@
-var api = "http://localhost:3000"
+var api = "http://localhost:3000";
 
-const Create = async () => {
-  const inputName = document.getElementById("nome");
+const form = document.getElementById('form')
+form.addEventListener('submit', e => {
+    e.preventDefault()
+
+    const inputName = document.getElementById("nome");
     const valueNome = inputName.value;
 
     const inputData = document.getElementById("data");
@@ -21,24 +24,4 @@ const Create = async () => {
     };
 
     await axios.post(`${api}/aluguel`, dados);
-    console.log(dados)
-};
-
-function enviar() {
-  return Create();
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+})

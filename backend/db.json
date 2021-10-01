@@ -1,16 +1,16 @@
 {
   "aluguel": [
     {
-      "nome": "",
-      "data": "",
-      "valor": "",
-      "status": "Desocupado",
+      "nome": "Marianne324432",
+      "data": "01/10/2021",
+      "valor": "100.00",
+      "status": "Alugado",
       "id": 1
     },
     {
-      "nome": "",
-      "data": "",
-      "valor": "",
+      "nome": "2332",
+      "data": "3223",
+      "valor": "2323",
       "status": "Alugado",
       "id": 2
     },
@@ -20,55 +20,6 @@
       "valor": "",
       "status": "Alugado",
       "id": 3
-    },
-    {
-      "nome": "",
-      "data": "",
-      "valor": "",
-      "status": "Alugado",
-      "id": 4
-    },
-    {
-      "nome": "",
-      "data": "",
-      "valor": "",
-      "status": "Alugado",
-      "id": 5
-    },
-    {
-      "nome": "",
-      "data": "",
-      "valor": "",
-      "status": "Alugado",
-      "id": 6
-    },
-    {
-      "nome": "",
-      "data": "",
-      "valor": "",
-      "status": "Alugado",
-      "id": 7
-    },
-    {
-      "nome": "",
-      "data": "",
-      "valor": "",
-      "status": "Alugado",
-      "id": 8
-    },
-    {
-      "nome": "",
-      "data": "",
-      "valor": "",
-      "status": "Alugado",
-      "id": 9
-    },
-    {
-      "nome": "",
-      "data": "",
-      "valor": "",
-      "status": "Alugado",
-      "id": 10
     }
   ]
 }

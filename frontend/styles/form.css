@@ -1,5 +1,5 @@
 /*============ Geral ==============*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -9,7 +9,7 @@
 
 body{
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: #edeff3;
     display: flow-root;
     justify-content: center;  
@@ -17,6 +17,7 @@ body{
 
 
 /* ============= Header ===================*/
+
 
 .logo{
     margin-left: 50px;
@@ -32,6 +33,7 @@ body{
     align-items: center;
     height: 80px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+    font-size: 1.1em;
 }
 
 .menu {
@@ -43,12 +45,12 @@ body{
 a {
     text-decoration: none;
     color: #000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.1em;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
-.header a:hover{
-    color: #00aaff;
+a:hover{
+    border-bottom: 2px solid;
 }
 
 .contact{
@@ -58,18 +60,18 @@ a {
     justify-content: space-between;
 }
 
-
 .profile{
-    width: 30px;
+    width: 40px;
 }
 
 .fa-chevron-down {
     color: #a2a8b2;
-    font-size: 15px;
+    font-size: 1.1em;
     position: relative;
-    right: 60px;
-    top: 2px;
+    right: 55px;
+    top: 5px;
 }
+
 
 .container {
     width: 500px;
@@ -88,9 +90,11 @@ h2 {
     margin: 12px;
     padding-top: 9px;
     padding-bottom: 9px;
+    color: #888282;
 }
 
 span {
+    color: #000;
     font-weight: 700;
     margin-right: 2px;
 }
@@ -127,6 +131,7 @@ fieldset:hover{
 }
 
 input {
+    padding: 1.3em 0;
     border: none;
     margin-bottom: 10px;
     margin-left: 6px;
@@ -134,7 +139,10 @@ input {
     font-size: 1em;
     justify-items: center;
     text-indent: 6px;
-    color: #11648c;
+    color: #0b3028;
+    position: relative;
+    font-weight: 700;
+    top: -15px;
 }
 input:focus{
     outline: none;
@@ -163,16 +171,17 @@ legend {
     padding: 7px;
 }
 
+
 #status{
     border-radius: 2em;
+    color: #fff;
     padding: 0.5em;
     margin-left: 0.3em;
-    background: #7d878452;
+    background: #888282;
     font-weight: 700;
     text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
 }
+
 
 button {
     width: 100%;
@@ -181,7 +190,7 @@ button {
     padding: 10px;
     font-weight: 900;
     color: #fff;
-    background-color: #0c7b8a;
+    background-color: #50af8b;
     border-radius: 20px;
     border: none;
     cursor: pointer;
