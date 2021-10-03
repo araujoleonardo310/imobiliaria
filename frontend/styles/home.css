@@ -73,12 +73,24 @@ span {
     margin-right: 2px;
 }
 
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: block;
+    margin: 60px auto;
+    padding: 1em;
+    background: rgb(255 255 255);
+    border-radius: 20px;
+}
+
 .table1 {
     padding-top: 10px;
 }
 
 .title{
-    padding: 20px;
+    color: #083247;
+    padding: 10px;
     text-align: center;
     width: 100%;
     text-transform: uppercase;
@@ -100,6 +112,7 @@ table{
     border-collapse: collapse;
     color: rgb(140 149 163);
     border-spacing: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.637);
 }
 
 table img {
@@ -107,17 +120,18 @@ table img {
 }
 
 th {
-    background-color: #11648c;
+    background-color: #0c7b8a;
     color: #fff;
     text-transform: uppercase;
     font-size: 0.9em;
     padding: 8px;
     text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.644);
 }
 
 td{
-    color: #00476a;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+    color: #083247;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
     padding: 10px;
     text-align: center;
     font-weight: 800;
