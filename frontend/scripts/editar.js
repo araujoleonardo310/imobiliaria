@@ -25,6 +25,16 @@ const Create = async () => {
   await axios.put(`${api}/aluguel/${id}`, dados);
 };
 
+
+function Enviar() {
+  const wes = document.querySelector("form");
+      wes.addEventListener("click", function(event) {
+      console.log(event);
+  });
+
+  return Create()
+}
+
 const List = async () => {
   var request = await axios.get(`${api}/aluguel`)
   var filter = request.data.filter((item) => item.id == id);
