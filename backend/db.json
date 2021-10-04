@@ -1,11 +1,3 @@
 {
-  "aluguel": [
-    {
-      "nome": "Marianne324432",
-      "data": "01/10/2021",
-      "valor": "100.00",
-      "status": "Alugado",
-      "id": 1
-    }
-  ]
+  "aluguel": []
 }
