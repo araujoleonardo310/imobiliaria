@@ -1,3 +1,18 @@
 {
-  "aluguel": []
+  "aluguel": [
+    {
+      "nome": "José Ferreira",
+      "data": "13/08/2021",
+      "valor": "600.00",
+      "status": "Alugado",
+      "id": 1
+    },
+    {
+      "nome": "",
+      "data": "",
+      "valor": "",
+      "status": "Alugado",
+      "id": 2
+    }
+  ]
 }
