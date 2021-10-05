@@ -37,20 +37,20 @@
             <form autocomplete="off" id="form">
                 <fieldset class="fildset">
                     <legend class="legend">Nome </legend>
-                    <input type="text" name="nome" id="nome" placeholder="Nome" onchange="Atualiando()">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
                     <i class="fas fa-user"></i>
                 </fieldset>
 
 
                 <fieldset>
                     <legend>Data</legend>
-                    <input type="data" name="data" id="data" placeholder="dd / mm / aaaa">
+                    <input type="data" name="data" id="data" placeholder="dd / mm / aaaa" required>
                     <i class="far fa-calendar-alt"></i>
                 </fieldset>
 
                 <fieldset>
                     <legend>R$ Valor</legend>
-                    <input type="number" name="valor" id="valor" placeholder="R$ 0,00">
+                    <input type="number" name="valor" id="valor" placeholder="R$ 0,00" required>
                     <i class="fas fa-wallet"></i>
                 </fieldset>
 
@@ -61,7 +61,7 @@
                     <option value="Desocupado">Desocupado</option>
                 </select>
 
-                <button onclick="Enviar()" type="submit">Enviar</button>
+                <button onclick="Valida()" type="submit">Enviar
             </form>
         </div>
     </div>

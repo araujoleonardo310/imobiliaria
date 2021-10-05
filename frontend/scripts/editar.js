@@ -31,9 +31,21 @@ const Create = async () => {
 };
 
 
-function Enviar() {
-  return Create()
+function Valida(){
+  let nome = document.getElementById('nome').value;
+  let data = document.getElementById('data').value;
+  let valor = document.getElementById('valor').value;
+
+  if(!(nome == '') && !(data == '') && !(valor == '')) {
+      return Create();
+  } else {
+      document.getElementById('nome').focus();
+      document.getElementById('data').focus();
+      document.getElementById('valor').focus();
+      
+  }
 }
+
 
 const List = async () => {
   var request = await axios.get(`${api}/aluguel`)

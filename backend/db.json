@@ -1,32 +1,3 @@
 {
-  "aluguel": [
-    {
-      "nome": "Paulo Fernades ",
-      "data": "12/01/2021",
-      "valor": "200",
-      "status": "Alugado",
-      "id": 1
-    },
-    {
-      "nome": "Gustavo Silva",
-      "data": "01/10/2021",
-      "valor": "200.00",
-      "status": "Alugado",
-      "id": 2
-    },
-    {
-      "nome": "",
-      "data": "",
-      "valor": "",
-      "status": "Alugado",
-      "id": 3
-    },
-    {
-      "nome": "",
-      "data": "",
-      "valor": "",
-      "status": "Alugado",
-      "id": 4
-    }
-  ]
+  "aluguel": []
 }

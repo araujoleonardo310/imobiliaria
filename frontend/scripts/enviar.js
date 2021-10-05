@@ -17,21 +17,34 @@ const Create = async () => {
   
       const selectStatus = document.getElementById("status");
       const valueStatus = selectStatus.value;
-  
-      var dados = {
-          nome: valueNome, 
-          data: valueData, 
-          valor: valueValor,
-          status: valueStatus 
-      };
-                  
-      await axios.post(`${api}/aluguel`, dados);
+
+        var dados = {
+                nome: valueNome, 
+                data: valueData, 
+                valor: valueValor,
+                status: valueStatus 
+            };      
+        await axios.post(`${api}/aluguel`, dados);
+       
 };
 
+function Valida(){
+    let nome = document.getElementById('nome').value;
+    let data = document.getElementById('data').value;
+    let valor = document.getElementById('valor').value;
 
-function Enviar() {
-    return Create();   
+    if(!(nome == '') && !(data == '') && !(valor == '')) {
+        return Create();
+    } else {
+        document.getElementById('nome').focus();
+        document.getElementById('data').focus();
+        document.getElementById('valor').focus();
+        
+    }
 }
+
+
+
 
 
 
