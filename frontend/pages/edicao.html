@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imobiliária</title>
+    <title>Formulário - Aluguéis</title>
     <script src="https://kit.fontawesome.com/115461b4d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/frontend/styles/form.css">
 </head>
@@ -24,17 +24,17 @@
 
         <div class="contact">
             <!-- Lado esquerdo contato -->
-            <a href="../pages/cadastro.html">Cadastro <i class="fas fa-plus"></i></a>
+            <a href="../pages/cadastro.html">Edição <i class="fas fa-user-edit"></i></a>
         </div>
     </div>
 
     <div class="container">
         <!-- Container -->
 
-        <h2><i class="fas fa-database"></i> Edicão</h2>
+        <h2><i class="fas fa-database"></i> Registros</h2>
 
         <div class="form">
-            <form autocomplete="off">
+            <form autocomplete="off" id="form">
                 <fieldset class="fildset">
                     <legend class="legend">Nome </legend>
                     <input type="text" name="nome" id="nome" placeholder="Nome" onchange="Atualiando()">
@@ -61,13 +61,14 @@
                     <option value="Desocupado">Desocupado</option>
                 </select>
 
-                <button type="submit" onclick="Enviar()">Enviar</button>
+                <button onclick="Enviar()" type="submit">Enviar</button>
             </form>
         </div>
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../scripts/editar.js"></script>
+
 
 </body>
 

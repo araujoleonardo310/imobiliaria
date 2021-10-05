@@ -3,6 +3,11 @@ var api = "http://localhost:3000";
 var id = localStorage.getItem("ID");
 
 const Create = async () => {
+
+  document.querySelector('form').addEventListener('submit', event => {
+    event.preventDefault();
+  })
+  
   const inputName = document.getElementById("nome");
   const valueNome = inputName.value;
 
@@ -27,11 +32,6 @@ const Create = async () => {
 
 
 function Enviar() {
-  const wes = document.querySelector("form");
-      wes.addEventListener("click", function(event) {
-      console.log(event);
-  });
-
   return Create()
 }
 
