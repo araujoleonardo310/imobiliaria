@@ -25,7 +25,8 @@ const Create = async () => {
                 status: valueStatus 
             };      
         await axios.post(`${api}/aluguel`, dados);
-       
+
+        resetInputsAndValues();       
 };
 
 function Valida(){
@@ -41,6 +42,12 @@ function Valida(){
         document.getElementById('valor').focus();
         
     }
+}
+
+function resetInputsAndValues() {
+    document.getElementById('nome') = ''
+    document.getElementById('data') = ''
+    document.getElementById('valor') = ''
 }
 
 

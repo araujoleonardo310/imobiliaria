@@ -46,7 +46,6 @@ function Valida(){
   }
 }
 
-
 const List = async () => {
   var request = await axios.get(`${api}/aluguel`)
   var filter = request.data.filter((item) => item.id == id);
